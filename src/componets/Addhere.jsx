@@ -8,7 +8,7 @@ function Addhere() {
 
     // Fetch ingredients from the API
     useEffect(() => {
-        fetch('http://localhost:3000/api/ingredients')
+        fetch('https://kitchenbackend.onrender.com/api/ingredients')
             .then(response => response.json())
             .then(data => {
                 setIngredients(data);
@@ -30,7 +30,7 @@ function Addhere() {
             date: date
         };
 
-        const url = `http://localhost:3000/api/ingredients/${selectedIngredient.name}`;
+        const url = `https://kitchenbackend.onrender.com/api/ingredients/${selectedIngredient.name}`;
 
         console.log('Sending PATCH request to:', url);
         console.log('Request payload:', data);

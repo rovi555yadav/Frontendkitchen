@@ -16,7 +16,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/api/auth/login', formData);
+      const response = await axios.post('https://kitchenbackend.onrender.com/api/auth/login', formData);
       console.log(response.data);
       localStorage.setItem('token', response.data.token); // Store the token
       setErrorMessage('');

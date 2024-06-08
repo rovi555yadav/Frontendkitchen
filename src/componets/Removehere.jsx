@@ -8,7 +8,7 @@ function Removehere() {
 
     // Fetch ingredients from the API
     useEffect(() => {
-        fetch('http://localhost:3000/api/ingredients')
+        fetch('https://kitchenbackend.onrender.com/api/ingredients')
             .then(response => response.json())
             .then(data => {
                 setIngredients(data);
@@ -25,7 +25,7 @@ function Removehere() {
             date: date
         };
 
-        const url = `http://localhost:3000/api/ingredients/subtract/${selectedIngredient.name}`;
+        const url = `https://kitchenbackend.onrender.com/api/ingredients/subtract/${selectedIngredient.name}`;
 
         fetch(url, {
             method: 'PATCH',

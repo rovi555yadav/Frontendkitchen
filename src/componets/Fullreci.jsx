@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import YouTube from 'react-youtube';
 
-const API = "http://localhost:3000/api/recipes";
+const API = "https://kitchenbackend.onrender.com/api/recipes";
 
 function Fullreci() {
   const [recipes, setRecipes] = useState([]);

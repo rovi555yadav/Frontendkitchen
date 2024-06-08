@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-const API = "http://localhost:3000/api/ingredients";
+const API = "https://kitchenbackend.onrender.com/api/ingredients";
 
 function Igcard() {
   const [ingredients, setIngredients] = useState([]);
