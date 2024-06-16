@@ -18,9 +18,9 @@ function Open() {
   return (
     <>
       <Navbar />
-      <div className="flex justify-between items-start bg-yellow-200">
+      <div className="flex flex-wrap md:flex-nowrap justify-between items-start bg-yellow-200 pt-16">
         {/* Slider Section */}
-        <div className="w-1/6 h-screen overflow-hidden pt-24 relative">
+        <div className="w-full md:w-1/6 h-screen overflow-hidden pt-24 md:pt-32 px-4 md:px-0 relative">
           <h1 className="text-xl font-bold mb-4">Available Offers</h1>
           <div className="grid grid-cols-1 gap-4">
             {[open1, open2, open3, open4, open5, open6].map((image, index) => (
@@ -28,7 +28,7 @@ function Open() {
                 <img
                   src={image}
                   alt={`slider image ${index}`}
-                  className="slider-image w-full h-32 object-cover rounded-sm grid grid-cols-1 gap-4"
+                  className="slider-image w-full h-32 object-cover rounded-sm"
                 />
               </div>
             ))}
@@ -36,8 +36,8 @@ function Open() {
         </div>
 
         {/* Content Section */}
-        <div className="w-5/6 p-8">
-          <div className="w-full h-auto pt-32">
+        <div className="w-full md:w-5/6 p-8">
+          <div className="w-full h-auto pt-32 md:pt-0">
             <h1 className="text-xl font-bold mb-4">
               Welcome to New World Kitchen
             </h1>
@@ -47,8 +47,8 @@ function Open() {
           </div>
 
           {/* Purchase Online Grocery Section */}
-          <div className="w-full h-screen overflow-y-auto grid grid-cols-3 gap-10 pr-16">
-            <h1 className="text-xl font-bold col-span-3 mb-4 pt-20">Purchase Online Grocery</h1>
+          <div className="w-full h-screen overflow-y-auto grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-10 pr-4 md:pr-16">
+            <h1 className="text-xl font-bold col-span-2 md:col-span-3 mb-4 pt-20">Purchase Online Grocery</h1>
             {[blinkit, country, swiggy1, Zepto, bigbasket, milk].map((image, index) => (
               <div key={index} className="w-full h-64">
                 <img

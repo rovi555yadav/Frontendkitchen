@@ -12,9 +12,9 @@ function Navbar() {
           </NavLink>
         </div>
         <nav className="flex justify-end flex-1">
-          <ul className="flex space-x-4 pr-24 gap-20 text-lg font-bold">
+          <ul className="flex space-x-4 pr-6 md:pr-24 gap-4 md:gap-20 text-lg font-bold">
             <li>
-              <NavLink to="/Open" className="text-green-700 hover:text-green-900">Home</NavLink>
+              <NavLink to="/Open" className="text-green-700 hover:text-green-900 pl-5">Home</NavLink>
             </li>
             <li>
               <NavLink to="/Igcard" className="text-green-700 hover:text-green-900">Ingredients</NavLink>

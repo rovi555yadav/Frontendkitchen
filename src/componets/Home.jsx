@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 import Kitchenlogo from './photo/Kitchenlogo.jpg';
-import main1 from './photo/main1.jpg';
 import home1 from './photo/home1.jpg';
 import home2 from './photo/home2.jpg';
 import home3 from './photo/home3.jpg';
@@ -13,7 +12,6 @@ import home7 from './photo/home7.jpg';
 import home8 from './photo/home8.jpeg';
 import home9 from './photo/home9.jpeg';
 import home10 from './photo/home10.jpeg';
-
 
 function Home() {
   return (
@@ -39,7 +37,8 @@ function Home() {
       </div>
 
       <h1 className="text-center px-12 py-4 text-cyan-700 text-pretty">
-      The kitchen is the heart of any home, central to daily life and family connections. It’s where meals are prepared, fostering health and nutrition. Beyond cooking, it’s a space for creativity, conversation, and bonding. A well-organized kitchen promotes efficiency, comfort, and joy, enriching overall living quality.</h1>
+        The kitchen is the heart of any home, central to daily life and family connections. It’s where meals are prepared, fostering health and nutrition. Beyond cooking, it’s a space for creativity, conversation, and bonding. A well-organized kitchen promotes efficiency, comfort, and joy, enriching overall living quality.
+      </h1>
 
       {/* Image Slider */}
       <div className="relative overflow-hidden w-full py-4 bg-yellow-200">
@@ -49,7 +48,7 @@ function Home() {
               <img
                 src={image}
                 alt={`homeimage${index}`}
-                className="h-40 w-60 object-cover transform transition-transform duration-500 hover:scale-105 hover:rotate-3 shadow-lg cursor-pointer"
+                className="h-40 w-60 md:h-40 md:w-60 sm:h-24 sm:w-36 object-cover transform transition-transform duration-500 hover:scale-105 hover:rotate-3 shadow-lg cursor-pointer"
               />
             </div>
           ))}
